@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Andres_Martinez">
+    <title>Mi Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+        <h1>Mi Calculadora</h1>
+        <form name="f1">
+            <section>
+                <input type="text" name="txtBox1" id="Box1">
+                <input type="text" name="txtBox2" value="0">
+            </section>
+            <section>
+                <button type="button" onclick="cleare()" class="op">CE</button>
+                <button type="button" onclick="cleanr()" class="op">C</button>
+                <button type="button" onclick="clearCaracter('')" class="op">←–</button>
+                <button type="button" onclick="arit('/')" class="arit">➗</button>
+            </section>
+            <section>
+                <button type="button" onclick="escribir('7')" class="num">7</button>
+                <button onclick="escribir('8')" class="num" type="button">8</button>
+                <button type="button" onclick="escribir('9')" class="num">9</button>
+                <button type="button" onclick="arit('*')" class="arit">✖️</button>
+            </section>
+            <section>
+                <button type="button" onclick="escribir('4')" class="num">4</button>
+                <button type="button" onclick="escribir('5')" class="num">5</button>
+                <button type="button" onclick="escribir('6')" class="num">6</button>
+                <button type="button" onclick="arit('-')" class="arit">➖</button>
+            </section>
+            <section>
+                <button type="button" onclick="escribir('1')" class="num">1</button>
+                <button type="button" onclick="escribir('2')" class="num">2</button>
+                <button type="button" onclick="escribir('3')" class="num">3</button>
+                <button type="button" onclick="arit('+')" class="arit">➕</button>
+            </section>
+            <section>
+                <button type="button" onclick="sq()" class="num">√</button>
+                <button type="button" onclick="escribir('0')" class="num">0</button>
+                <button type="button" onclick="escribir('.')" class="num">.</button>
+                <button type="button" onclick="iqual()" class="iqual">🟰</button>
+            </section>
+        </form>
+    </center>
+    <script src="./scrip.js"></script>
+</body>
+</html>
